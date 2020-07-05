@@ -1,0 +1,601 @@
+:root{
+    --blue:#027BCE;
+   --black:#000000;
+   --lightblue:#6DD6DA;
+   --white:#ffffff;
+   --blueking: #0779e4;
+   --title:35px;
+   --text:19px;
+   --font:'Damion', cursive;
+    }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+body{
+    background: #ffff;
+    overflow-x: hidden;
+    font-family: 'Red Hat Text', sans-serif;
+    }
+
+
+
+
+#header{
+    width: 100%;          /** <<<--- Header <<<---  **/
+    position: relative;
+    }
+
+
+.go-top{
+    display: none;     /** <<<--- Ir Arriba <<<---  **/     
+    }
+
+
+.header-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 500px;
+    }
+
+
+                /** <<<--- Menu de Navegación <<<---  **/
+                    .header-container .nav{
+                        width: 100%;
+                        height: 50px;
+                        position: absolute;
+                        background: rgba(29, 197, 248, 0.479);
+                        display: grid;
+                        grid-template-columns: 300px 1fr;       /** <<<--- Menu de Navegación <<<---  **/
+                        grid-template-rows: 1fr;
+                        justify-items: center;
+                        align-items: center;
+                        }
+                    .nav .logo-box{
+                        width: 100%;
+                        margin-left: 80px;
+                        }   
+                    .logo-box h1 a{
+                        font-size: 25px;
+                        text-decoration: none;              /** <<<--- Logo en letra de menú Nav <<<---  **/
+                        color: black;
+                        }
+                    .nav .logo-box .tbt-menu{                   /** <<<--- Icono Menú Barras <<<---  **/
+                        display: none;
+                        }
+
+
+                    .nav .list-container{                       
+                        width: 100%;                                    
+                        display: flex;                      
+                        flex-flow: row nowrap;      
+                        justify-content: flex-end;      
+                        align-items: center;    
+                        }
+                    .list-container li{ 
+                        list-style: none;       
+                        }                                   
+                    .list-container li a{                               
+                        font-size: 22px;                
+                        font-weight: 600;               
+                        text-decoration: none;         /** <<<--- Menu de Navegación <<<---  **/             
+                        margin: 0 15px;
+                        color: black;
+                        border-radius: 24px;
+                        transition: 0.3s;
+                        padding: 0 10px;
+                        }
+                    .list-container li a:hover{
+                        background: #d92027;         /** <<<--- Menu de Navegación <<<---  **/
+                        color: white;
+                        }
+                    .list-container li a.activo{
+                        background: #d92027;                
+                        color: white;
+                    }
+
+
+                    /** <<<--- Imagen de Header <<<---  **/
+.img-header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/WebHeader.png);        /** <<<--- Imagen de Header <<<---  **/
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    }
+.img-header .degrade{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);                 /** <<<--- Degradado de header <<<---  **/
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    }
+.degrade .logo-center{
+    width: 300px;
+    height: 300px;
+    }
+.degrade .logo-center img{
+    width: 300px;
+    height: 300px;
+    }
+.degrade .logo-text{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 10px 60px;      /** <<<--- Logo delicias del campo <<<---  **/      
+    justify-items: center;
+    align-items: center;
+    }
+.degrade .logo-text h2{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    }
+    .degrade .logo-text hr{
+        width: 600px;
+        height: 4px;
+        background: white;
+        opacity: 50%;
+    }
+.degrade .logo-text button{
+    width: 200px;
+    height: 50px;
+    background: #d92027;
+    color: white;
+    font-size: 25px;                                /** <<<--- Boton <<<---  **/
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;
+    margin-top: 80px;  
+    }
+.degrade .logo-text button:hover{
+    background:  rgba(29, 197, 248, 0.479);
+    color: black;
+    }
+
+
+
+
+
+                /** <<<--- Main <<<---  **/
+
+.bloque{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 1fr;                  /** <<<--- Main <<<---  **/
+    }
+                            .acerca-de{
+                                width: 100%;
+                                display: flex;
+                                margin-top: 100px;
+
+                                flex-flow: column nowrap;
+                                justify-content: center;
+                                align-items: center;
+                                }
+                            .acerca-de .info-container{
+                                margin-top: 150px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;                    /** <<<--- Acerca de Nosotros <<<---  **/
+                                align-items: center;
+                                }
+                            .info-container h2{
+                                font-size: 45px;
+                                font-weight: 500;   
+                                }
+                            .info-container p{
+                                width: 80%;
+                                text-align: center;
+                                font-size: 20px;
+                                margin-top: 20px;
+                                }
+
+
+/** <<<--- Imagenes Productos <<<---  **/
+
+.about-galery{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;                 /** <<<--- Imagenes Productos <<<---  **/
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 20px;
+    justify-items: center;
+    align-items: center ;
+    margin-top: 180px;
+}
+.about-galery .img1{
+    width: auto;
+    height: 100%;
+    border: 2px solid #027BCE;                  /** <<<--- Imagenes Productos <<<---  **/
+    border-radius: 24px;
+
+    display: flex;
+
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.img1 hr{
+    width: 300px;
+    height: 3px;
+    background:#08d9d6;
+    opacity: 80%;
+}
+.about-galery .img1 img{
+    width: 400px;
+    height: 400px;
+}   
+.about-galery .img1 button{
+    width: 100px;
+    height: 35px;
+    margin-top: 10px;
+    background:  rgba(29, 197, 248, 0.479);
+    color: black;
+    font-size: 15px;                    /** <<<--- Boton Productos <<<---  **/
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;
+}
+.about-galery .img1 button:hover{
+    background: #2dda02;                /** <<<--- Imagenes Productos Hover <<<---  **/
+    color: black; 
+}
+
+.about-galery .img1 .ver1{
+    width: 100px;
+    height: 35px;
+    background: rgba(29, 197, 248, 0.479);
+    color: black;
+    font-size: 15px;
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;
+}
+.about-galery .img1 .ver1:hover{            /** <<<--- Imagenes Productos Hover <<<---  **/
+    background: #bb215c;
+    color: black; 
+}
+.about-galery .img1 .ver2{
+    width: 100px;
+    height: 35px;
+    background: rgba(29, 197, 248, 0.479);
+    color: black;
+    font-size: 15px;
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;
+}
+.about-galery .img1 .ver2:hover{            /** <<<--- Imagenes Productos Hover <<<---  **/
+    background: #d92027;
+    color: black; 
+}
+
+.about-galery .img1 .ver3{
+    width: 100px;
+    height: 35px;
+    background: rgba(29, 197, 248, 0.479);
+    color: black;
+    font-size: 15px;
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;
+}
+.about-galery .img1 .ver3:hover{            /** <<<--- Imagenes Productos Hover <<<---  **/
+    background: #c08402;
+    color: black; 
+}
+
+
+
+                            /** <<<--- Acerca de nosotros parte inferios <<<---  **/
+                                        .acerca{
+                                            width: 100%;
+                                            
+                                            display: grid;
+                                            grid-template-columns: 1fr;
+                                            grid-template-rows: 300px;          /** <<<--- Acerca de 2 <<<---  **/
+                                            justify-items: center;
+                                            align-items: center;
+                                        }
+                                        .acerca .info{
+                                            width: 100%;
+
+                                            display: flex;
+                                            flex-flow: column nowrap;       /** <<<--- Acerca de 2 <<<---  **/
+                                            justify-content: center;
+                                            align-items: center;
+                                        }
+                                        .acerca .info h2{
+                                            font-size: 45px;
+                                            font-weight: 500;
+                                        }
+
+                                        .acerca .info p{
+                                            width: 80%;
+                                            text-align: center;
+                                            font-size: 20px;
+                                            margin-top: 20px;
+                                        }
+
+
+
+
+
+
+/** <<<--- FOOTER <<<---  **/
+footer{
+    width: 100%;
+    height: 300px;
+    padding: 0;
+    margin: 0;
+    border-top: solid;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+                            /** <<<--- logo del footer, hr y contacto <<<---  **/
+                        .contact{
+                            width: 100%;
+                            height: auto;
+                            background: rgba(0 , 0, 0, 0.9);                          /** <<<--- Footer logo y contactenos <<<---  **/     
+
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            grid-template-rows: 350px;
+                            justify-items: center;
+                            align-items: center;
+                            }
+                        .contact .logo-footer{
+                            width: auto;
+
+                            display: flex;
+                            flex-flow: column nowrap;
+                            justify-content: center;
+                            align-items: center;
+                            }
+                        .contact .logo-footer hr{
+                            width: 150px;
+                            height: 2px;
+                            background: white;
+                            border: none;
+                            margin-top: 5px;
+                            }
+                        .contact .logo-footer a{  
+                            }
+                        .logo-footer a img{
+                                width: 200px;
+                                height: 200px;
+                                }
+                        /** Footer2. derechos y menu**/
+                        .contact .contact-footer{
+                            width: 100%;
+
+                            display: flex;
+                            flex-flow: column nowrap;
+                            justify-content: center;
+                            align-items: center;
+                            color: white;
+                            }
+                        .contact-footer h2{
+                            font-size: 20px;
+
+                            }
+
+                        
+                        
+/** Footer2. derechos y menu**/
+
+.footer2{
+    width: 100%; 
+    box-sizing: border-box;
+    background: black;
+
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    grid-template-rows: 20px;
+    justify-items: center;
+    align-items: center;
+    }
+.footer2 .derechos{
+    width: 100%;
+    height: auto;   
+}
+.footer2 .derechos p{
+    font-size: 15px;
+    color: var(--blueking);
+    text-align: center;
+}
+.footer2 .menu-footer{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+.menu-footer .list-footer{
+    width: 100%;
+
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    }
+.footer2 .menu-footer li{
+    list-style: none;
+    }
+.footer2 .menu-footer li a{
+    font-size: 13px;                               
+    text-decoration: none;         /** <<<--- Menu de Navegación Footer<<<---  **/             
+    margin: 0 20px;
+    color: white;
+    }
+                                
+
+
+
+
+/** <<<--- Pagina Quesadilla de Bocadillo --->>> **/
+
+#header-produc{
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 45px 1fr;
+    justify-items: center;
+    align-items: center;
+    }
+
+.list-produc{
+    width: 100%;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.9);
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    }
+.list-produc li{
+    list-style: none;
+}                                   
+.list-produc li a{                               
+    font-size: 22px;                
+    font-weight: 600;               
+    text-decoration: none;         /** <<<--- Menu de Navegación <<<---  **/             
+    margin: 0 15px;
+    color: black;
+    border-radius: 24px;
+    transition: 0.3s;
+    padding: 0 10px;
+    }
+.list-produc li a:hover{
+    background: #d92027;         /** <<<--- Menu de Navegación <<<---  **/
+    color: white;
+    }
+.list-produc li a.activo-produc{
+    background: #d92027;                
+    color: white;
+}
+
+.container-header-produc{
+    width: 100%;
+    background: rgba(21, 105, 105, 0.493);
+}
+.logo-produc{
+    width: 100%;
+    height: auto;
+
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 200px ;
+}
+.logo-center-produc{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-center-produc img{
+    width: 150px;
+    height: 150px;
+}
+
+.logo-text-produc{
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.logo-text-produc h3{
+    font-size: 50px;
+    color: #000000;
+}
+.logo-text-produc hr{
+    width: 400px;
+    height: 4px;
+    background: white;
+    opacity: 50%;
+}
+.logo-text-produc button{
+width: 200px;
+height: 50px;
+background: #d92027;
+color: white;
+font-size: 25px;                                /** <<<--- Boton <<<---  **/
+border-radius: 24px;
+border: none;
+cursor: pointer;
+margin-top: 30px;  
+}
+.logo-text-produc button:hover{
+background: rgba(29, 197, 248, 0.479);
+color: black;
+}
+
+main{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.img-produc{
+    width: 100%;
+
+    display: flex;
+
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+.img-produc .bocadillo{
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    border-top: solid 1px;
+}
+.bocadillo .img-bocadillo img{
+    width: 600px;
+    height: 600px;
+}
+.bocadillo .produc-bocadillo{
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.bocadillo .produc-bocadillo p{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.bocadillo .produc-bocadillo button{
+    margin-top: 20px;
+}
+
+
+
+
